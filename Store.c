@@ -20,15 +20,9 @@ int main(void) {
   printf("5 - Brinquedos\n");
   printf("Digite o numero da categoria que deseja:");
   scanf("%d", &opcao);
-  switch (produtos) {
-  case 1:
-    printf("Voce escolheu Alimentos. Agora escolha o produto que deseja");
-
-        case 2 :
-
-        printf("Voce escolheu Roupas. Agora escolha o produto que deseja");
-  }
-
+  if(opcao == 1){
+    printf("Voce escolheu Alimentos. Agora escolha o produto que deseja\n"); 
+  do{
   printf("1. Feijão - R$ 5,00\n");
   printf("2. Arroz - R$ 3,00\n");
   printf("3. Macarrão - R$ 2,00\n");
@@ -39,90 +33,48 @@ int main(void) {
   printf("8. Refrigerante - R$ 5,00\n");
   printf("9. Pão - R$ 1,00\n");
   printf("10. Molho de tomate - R$ 2,00\n");
+  printf("0. Finalizar compra\n");
+  scanf("%d", &produtos);
+  
+  switch(produtos) {
+      case 1: preco = 5.00; break;
+      case 2: preco = 3.00; break;
+      case 3: preco = 2.00; break;
+      case 4: preco = 15.00; break;
+      case 5: preco = 3.50; break;
+      case 6: preco = 6.00; break;
+      case 7: preco = 4.00; break;
+      case 8: preco = 5.00; break;
+      case 9: preco = 1.00; break;
+      case 10: preco = 2.00; break;
+      case 11:
+      printf("Este produto já foi escolhido anteriormente");
+      continue;
+      default: 
+      printf("Produto inválido"); 
+      continue;
+  }
+  if(produtos != 0) 
+  printf("Digite a quantidade desejada de cada produto");
+        scanf("%d", &quantidade);
+        total += quantidade * preco;
+       }
+    } while (produtos != 0);
+ }
+  else if(opcao == 2){
+      printf("Voce escolheu Roupas. Agora escolha o produto que deseja\n");
+  printf("1. Camisas - R$ 40,00\n");
+  printf("2. Calças - R$ 30,00\n");
+  printf("3. Shorts - R$ 20,00\n");
+  printf("4. Bermudas - R$ 25,00\n");
+  printf("5. Camisetas - R$ 20,50\n");
+  printf("6. Sapatos - R$ 20,00\n");
+  printf("7. Grávatas - R$ 20,00\n");
+  printf("8. Roupas intimas (Masculina) - R$ 30,00\n");
+  printf("9. Roupa intima (Feminina) - R$ 40,00\n");
+  printf("10. Meias - R$ 25,00\n");
   printf("11. Você ja escolheu esse produto.\n");
   printf("0. Finalizar compra\n");
-  do {
-    printf("Digite o número do produto desejado: ");
-    scanf("%d", &opcao);
-    switch (opcao) {
-    case 1:
-      printf("Digite a quantidade de feijão desejada:");
-      scanf("%d", &quantidade);
-      preco = 5.0;
-      total += quantidade * preco;
-      break;
-
-    case 2:
-      printf("Digite a quantidade de arroz desejada:");
-      scanf("%d", &quantidade);
-      preco = 3.0;
-      total += quantidade * preco;
-      break;
-
-    case 3:
-      printf("Digite a quantidade de macarrão desejada:");
-      scanf("%d", &quantidade);
-      preco = 3.0;
-      total += quantidade * preco;
-      break;
-
-    case 4:
-      printf("Digite a quantidade de carne desejada:");
-      scanf("%d", &quantidade);
-      preco = 15.0;
-      total += quantidade * preco;
-      break;
-
-    case 5:
-      printf("Digite a quantidade de leite desejada:");
-      scanf("%d", &quantidade);
-      preco = 3.5;
-      total += quantidade * preco;
-      break;
-
-    case 6:
-      printf("Qual quantidade de cervejadesejada:");
-      scanf("%d", &quantidade);
-      preco = 6.0;
-      total += quantidade * preco;
-      break;
-
-    case 7:
-      printf("Digite a quantidade de suco desejada: ");
-      scanf("%d", &quantidade);
-      preco = 4.0;
-      total += quantidade * preco;
-      break;
-
-    case 8:
-      printf("Quantidade de refrigerante desejada: ");
-      scanf("%d", &quantidade);
-      preco = 5.0;
-      total += quantidade * preco;
-      break;
-
-    case 9:
-      printf("Digite a quantidade de pão desejada: ");
-      scanf("%d", &quantidade);
-      preco = 1.0;
-      total += quantidade * preco;
-      break;
-
-    case 10:
-      printf("Quantidade de molho de tomate desejada:");
-      scanf("%d", &quantidade);
-      preco = 2.0;
-      total += quantidade * preco;
-      break;
-
-    case 0:
-      printf("Compra finalizada. O valor total compra é R$ %.2f\n", total);
-      break;
-
-    default:
-      printf("Opção inválida. Tente novamente.\n");
-      break;
-    }
-  } while (opcao != 0);
+  }
   return 0;
 }
