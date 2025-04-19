@@ -1,23 +1,23 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 int main(void) {
   int produtos, opcao, quantidade;
   float preco, total = 0;
 
-  printf("Seja bem vindo a nossa loja virtual!\n");
-  printf("Primeiro. Para facilitar sua experiencia conosco, escolha qual a natureza do produto deseja comprar.\n");
+  printf("Seja bem vindo a nossa loja virtual 😃!\n");
+  printf("Primeiro. Para facilitar sua experiencia conosco, escolha qual a natureza do produto deseja comprar 🛒.\n");
   
-  printf("1 - Alimentos\n");
-  printf("2 - Roupas\n");
-  printf("3 - Eletronicos\n");
-  printf("4 - Livros\n");
-  printf("5 - Brinquedos\n");
+  printf("1 - Alimentos 🍟\n");
+  printf("2 - Roupas 🧵\n");
+  printf("3 - Eletronicos 🔌\n");
+  printf("4 - Livros 📘\n");
+  printf("5 - Brinquedos 🪀\n");
   printf("Digite o numero da categoria que deseja:");
   scanf("%d", &opcao);
   if(opcao == 1){
-    printf("Voce escolheu Alimentos. Agora escolha o produto que deseja\n"); 
+    printf("Voce escolheu Alimentos 🍽. Agora escolha o produto que deseja\n"); 
   do{
-  printf("1. Feijão - R$ 5,00\n");
+  printf("1. Feijão  - R$ 5,00\n");
   printf("2. Arroz - R$ 3,00\n");
   printf("3. Macarrão - R$ 2,00\n");
   printf("4. Carne - R$ 15,00\n");
@@ -27,7 +27,7 @@ int main(void) {
   printf("8. Refrigerante - R$ 5,00\n");
   printf("9. Pão - R$ 1,00\n");
   printf("10. Molho de tomate - R$ 2,00\n");
-  printf("0. Finalizar compra\n");
+  printf("0. Finalizar compra \n");
   scanf("%d", &produtos);
   switch(produtos) {
       case 1: preco = 5.00; break;
@@ -41,8 +41,8 @@ int main(void) {
       case 9: preco = 1.00; break;
       case 10: preco = 2.00; break;
       case 0:
-      printf("Compra finalizada\n"); break;
-      default: 
+      printf("Compra finalizada ✨\n"); break;
+      default:
       printf("Produto inválido.\n"); 
       continue;
   }
@@ -56,7 +56,7 @@ int main(void) {
  }
   else if(opcao == 2){ 
     do {
-  printf("Voce escolheu Roupas. Agora escolha o produto que deseja\n");
+  printf("Voce escolheu Roupas 👔. Agora escolha o produto que deseja\n");
   printf("1. Camisas - R$ 40,00\n");
   printf("2. Calças - R$ 30,00\n");
   printf("3. Shorts - R$ 20,00\n");
@@ -82,7 +82,7 @@ int main(void) {
       case 9: preco = 40.00; break;
       case 10: preco = 25.00; break;
       case 0:
-      printf("Compra finalizada\n"); break;
+      printf("Compra finalizada ✨\n"); break;
       default: 
       printf("Produto inválido.\n"); 
       continue;
@@ -97,7 +97,7 @@ int main(void) {
   } 
    else if(opcao == 3){ 
     do {
-  printf("Voce escolheu Eletrônicos. Agora escolha o produto que deseja\n");
+  printf("Voce escolheu Eletrônicos 📳. Agora escolha o produto que deseja\n");
   printf("1. Mouse - R$ 74,00\n");
   printf("2. Teclado - R$ 400,00\n");
   printf("3. Carregador - R$ 200,00\n");
@@ -123,7 +123,7 @@ int main(void) {
       case 9: preco = 40.00; break;
       case 10: preco = 60.00; break;
       case 0:
-      printf("Compra finalizada\n"); break;
+      printf("Compra finalizada ✨\n"); break;
       default: 
       printf("Produto inválido.\n"); 
       continue;
@@ -138,7 +138,7 @@ int main(void) {
   } 
    else if(opcao == 4){ 
     do {
-  printf("Voce escolheu Livros. Agora escolha o produto que deseja\n");
+  printf("Voce escolheu Livros 📖. Agora escolha o produto que deseja\n");
   printf("1. O Senhor dos Anéis - R$ 49,90\n");
   printf("2. Dom Casmurro - R$ 29,00\n");
   printf("3. 1984 - R$ 39,50\n");
@@ -164,7 +164,7 @@ int main(void) {
       case 9: preco = 32.00; break;
       case 10: preco = 36.00; break;
       case 0:
-      printf("Compra finalizada\n"); break;
+      printf("Compra finalizada ✨\n"); break;
       default: 
       printf("Produto inválido.\n"); 
       continue;
@@ -179,7 +179,7 @@ int main(void) {
    }
       else if(opcao == 5){ 
     do {
-  printf("Voce escolheu Brinquedos. Agora escolha o produto que deseja\n");
+  printf("Voce escolheu Brinquedos 🎲. Agora escolha o produto que deseja\n");
   printf("1. Carro - R$ 50,90\n");
   printf("2. Bonecos (Masculino) - R$ 49,00\n");
   printf("3. Bonecas (Feminina) - R$ 39,00\n");
@@ -205,7 +205,7 @@ int main(void) {
       case 9: preco = 91.00; break;
       case 10: preco = 100.00; break;
       case 0:
-      printf("Compra finalizada\n"); break;
+      printf("Compra finalizada ✨\n"); break;
       default: 
       printf("Produto inválido.\n"); 
       continue;
