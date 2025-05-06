@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int main(void) {
   int produtos, opcao, quantidade;
   float preco, total = 0;
+  char nomeDeCliente[40], emailDeUsuario[60];
 
   printf("Seja bem vindo a nossa loja virtual 😃!\n");
-  printf("Primeiro. Para facilitar sua experiencia conosco, escolha qual a natureza do produto deseja comprar 🛒.\n");
+  printf("Primeiro Digite seu nome:");
+  scanf("%s",nomeDeCliente);
+  printf("Agora digite seu E-mail, onde receberá atualizações do seu pedido:");
+  scanf("%s",emailDeUsuario);
+  printf("Agora %s, dono do E-mail %s.Para facilitar sua experiencia conosco, escolha qual a natureza do produto deseja comprar 🛒.\n", nomeDeCliente, emailDeUsuario);
   
   printf("1 - Alimentos 🍟\n");
   printf("2 - Roupas 🧵\n");
@@ -53,6 +59,7 @@ int main(void) {
        }
     } while (produtos != 0); 
     printf("Total de compras foi de:R$ %.2f\n", total);
+    printf("Agora acompanhe seu E-mail: %s, para mais atualizações sobre sua compra.", emailDeUsuario);
  }
   else if(opcao == 2){ 
     do {
@@ -94,6 +101,7 @@ int main(void) {
        }
     } while (produtos != 0); 
     printf("Total de compras foi de:R$ %.2f\n", total);
+    printf("Agora acompanhe seu E-mail: %s, para mais atualizações sobre sua compra.", emailDeUsuario);
   } 
    else if(opcao == 3){ 
     do {
@@ -135,6 +143,7 @@ int main(void) {
        }
     } while (produtos != 0); 
     printf("Total de compras foi de:R$ %.2f\n", total);
+    printf("Agora acompanhe seu E-mail: %s, para mais atualizações sobre sua compra.", emailDeUsuario);
   } 
    else if(opcao == 4){ 
     do {
@@ -175,7 +184,8 @@ int main(void) {
         total += quantidade * preco;
        }
     } while (produtos != 0); 
-    printf("Total de compras foi de:R$ %.2f\n", total); 
+    printf("Total de compras foi de:R$ %.2f\n", total);
+    printf("Agora acompanhe seu E-mail: %s, para mais atualizações sobre sua compra.", emailDeUsuario);
    }
       else if(opcao == 5){ 
     do {
@@ -216,7 +226,8 @@ int main(void) {
         total += quantidade * preco;
        }
     } while (produtos != 0); 
-    printf("Total de compras foi de:R$ %.2f\n", total); 
+    printf("Total de compras foi de:R$ %.2f\n", total);
+    printf("Agora acompanhe seu E-mail: %s, para mais atualizações sobre sua compra.", emailDeUsuario);
    }else{
         printf("Isso não é uma opção válida. Escolha novamente");
   return 0;
