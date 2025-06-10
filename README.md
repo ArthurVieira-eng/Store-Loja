@@ -1,4 +1,4 @@
-🛍️ Loja Virtual Interativa em C. 
+# 🛍️ Loja Virtual Interativa em C. 
 
 📋 Descrição
 Este projeto é uma aplicação de loja virtual interativa desenvolvida em linguagem C. O programa permite ao usuário simular uma compra online, escolhendo produtos de diferentes categorias, inserindo seus dados pessoais (nome e e-mail) e finalizando uma compra com cálculo automático do valor total.
